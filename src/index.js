@@ -1,17 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+// el stands for element, we are getting our element from the  id="root" in the main html file in the public folder.
+const el = document.getElementById("root");
+// Then we are initializing a variable root and creating the root element inside the react-dom file inside of the node-modules folder.
+const root = ReactDOM.createRoot(el);
+// Then we are rendering the component App to the page
+root.render(<App />);
